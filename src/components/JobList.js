@@ -1,4 +1,5 @@
 import { useJobs } from '../contexts/JobsContext';
+import JobItem from './JobItem';
 
 function JobList() {
   const { jobs, loading, error } = useJobs();
@@ -9,11 +10,7 @@ function JobList() {
   return (
     <ul className="job-list">
       {jobs.map((job) => (
-        <li key={job.id} className="job-item">
-          <span className="job-title">{job.title}</span>
-          <input className="job-input" type="text" placeholder="Repo here" />
-          <button className="job-button" type="button">Apply</button>
-        </li>
+        <JobItem key={job.id} job={job} />
       ))}
     </ul>
   );
