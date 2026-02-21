@@ -83,3 +83,27 @@
 .job-button:active {
   transform: scale(0.97);
 }
+
+.job-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.job-item--applied {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.job-applied {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #16a34a;
+  margin-left: auto;
+}
+
+.job-error {
+  font-size: 0.78rem;
+  color: #dc2626;
+  white-space: nowrap;
+}
