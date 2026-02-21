@@ -62,7 +62,7 @@ function JobItem({ job }) {
             onClick={handleApply}
             disabled={loading || !repoUrl.trim()}
           >
-            {loading ? 'Applying...' : 'Apply'}
+            {loading ? 'Submitting...' : 'Submit'}
           </button>
         </>
       )}
